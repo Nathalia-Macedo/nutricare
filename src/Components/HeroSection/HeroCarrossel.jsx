@@ -96,7 +96,7 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import mobile from "../../Assets/mobile3.png"
 import desktop2 from "../../Assets/desktop2.png"
-
+import mobile2 from '../../Assets/mobile2.png'
 const slides = [
   {
     id: 1,
@@ -109,7 +109,7 @@ const slides = [
     desktopImage:
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20179-KYso8EiLDRqzfN66Tac9F7rZ5KOgNM.png",
   mobileImage:
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20179%20(1)-XX5SJRUOJcK6el4fLwWIW4vni4pOUK.png",
+   mobile2,
   targetSection: "team",
   },
   {
