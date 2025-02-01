@@ -20,10 +20,10 @@ const defaultHeaderData = {
   },
   navigation: [
     { label: "Home", href: "/" },
-    { label: "Especialidades", href: "/especialidades" },
-    { label: "Sobre Nós", href: "/sobre" },
-    { label: "Receitas", href: "/receitas" },
-    { label: "Blog", href: "/blog" },
+    { label: "Especialidades", href: "especialidades" },
+    { label: "Sobre Nós", href: "sobrenos" },
+    { label: "Receitas", href: "receitas" },
+    { label: "Blog", href: "blog" },
   ],
 }
 
