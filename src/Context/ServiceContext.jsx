@@ -1,110 +1,6 @@
-// import React, { createContext, useContext } from "react"
-// import card1 from '../Assets/card1.png'
-// import card2 from '../Assets/card2.png'
-// import card3 from '../Assets/card3.png'
-// import cardio from '../Assets/cardiopatia.png'
-// import gestante from '../Assets/gestante.png'
-// import idoso from '../Assets/Idoso.png'
-// import hiper from '../Assets/hipertensao.png'
-// import infantil from '../Assets/infantil.png'
-// import vegan from '../Assets/vegan.png'
-// import med from '../Assets/mediterraneo.png'
-// import esportivo from '../Assets/esportivo.png'
-// const ServicesContext = createContext()
-
-// export function ServicesProvider({ children }) {
-//   const services = [
-//     {
-//       id: 1,
-//       title: "Diabetes",
-//       description: "Controle Glicêmico especializado",
-//       image: card1,
-//       link: "/services/diabetes",
-//     },
-//     {
-//       id: 2,
-//       title: "Nefropatia",
-//       description: "Cuidado renal através da alimentação",
-//       image: card2,
-//       link: "/services/nefropatia",
-//     },
-//     {
-//       id: 3,
-//       title: "Obesidade",
-//       description: "Emagrecimento saudável e duradouro",
-//       image: card3,
-//       link: "/services/obesidade",
-//     },
-//     {
-//       id: 4,
-//       title: "Cardiopatia",
-//       description: "Nutrição para saúde do coração",
-//       image: cardio,
-//       link: "/services/cardiopatia",
-//     },
-//     {
-//       id: 5,
-//       title: "Gestante",
-//       description: "Nutrição para você e seu bebê",
-//       image: gestante,
-//       link: "/services/gestante",
-//     },
-//     {
-//       id: 6,
-//       title: "Idoso",
-//       description: "Alimentação na terceira idade",
-//       image: idoso,
-//       link: "/services/idoso",
-//     },
-//     {
-//       id: 7,
-//       title: "Hipertensão",
-//       description: "Controle natural da pressão arterial através de uma alimentação equilibrada",
-//       image:hiper,
-//       link: "/services/hipertensao",
-//     },
-//     {
-//       id: 8,
-//       title: "Infantil",
-//       description: "Nutrição especializada para promover o desenvolvimento saudável",  
-//       image: infantil,
-//       link: "/services/infantil",
-//     },
-//     {
-//       id: 9,
-//       title: "Vegano + Vegetar.",
-//       description: "Planejamento nutricional completo e balanceado para dietas 100% vegetais", 
-//       image: vegan,
-//       link: "/services/vegano-vegetariano",
-//     },
-//     {
-//       id: 10,
-//       title: "Dieta do Mediterrâneo",
-//       description: "Sabor e saúde mediterrânea",
-//       image: med,
-//       link: "/services/dieta-mediterraneo",
-//     },
-//     {
-//       id: 11,
-//       title: "Esportivo",
-//       description: "Nutrição personalizada para atletas e praticantes de atividades físicas", 
-//       image: esportivo,
-//       link: "/services/esportivo",
-//     },
-//   ]
-
-//   return <ServicesContext.Provider value={{ services }}>{children}</ServicesContext.Provider>
-// }
-
-// export function useServices() {
-//   const context = useContext(ServicesContext)
-//   if (!context) {
-//     throw new Error("useServices must be used within a ServicesProvider")
-//   }
-//   return context
-// }
-
 import { createContext, useContext } from "react"
+import cardio1 from '../Assets/cardio.jpg'
+import obesidade from '../Assets/obesidade.jpg'
 import card1 from "../Assets/card1.png"
 import card2 from "../Assets/card2.png"
 import card3 from "../Assets/card3.png"
@@ -116,7 +12,16 @@ import infantil from "../Assets/infantil.png"
 import vegan from "../Assets/vegan.png"
 import med from "../Assets/mediterraneo.png"
 import esportivo from "../Assets/esportivo.png"
+import nefropatia from '../Assets/nefro.jpg'
+import gravida from '../Assets/gravida.jpg'
+import idoso1 from '../Assets/idoso.jpg'
+import hipertensao from '../Assets/hipertensão1.jpg'
 
+import infantil1 from '../Assets/infantil.jpg'
+
+import mediterraneo1 from '../Assets/mediterraneo.jpg'
+
+import esportivo1 from '../Assets/esportivo.jpg'
 const ServicesContext = createContext()
 
 export function ServicesProvider({ children }) {
@@ -142,7 +47,7 @@ export function ServicesProvider({ children }) {
       description: "Cuidado renal através da alimentação",
       image: card2,
       link: "/services/2",
-      articleImage: "https://img.freepik.com/free-photo/beautiful-sporty-woman-kitchen-with-vegetables_1157-28026.jpg?t=st=1738280956~exp=1738284556~hmac=a3922f109a7934292ad56d0a2e315f452369704851c1dc87e4bc63e21b8f40b8&w=996",
+      articleImage: nefropatia,
       articleText: `A nefropatia, ou doença renal, requer uma atenção especial à alimentação para manter a saúde dos rins e prevenir a progressão da doença. Uma dieta adequada pode ajudar a controlar os sintomas e melhorar a qualidade de vida.
 
       Um plano nutricional para nefropatia geralmente envolve o controle da ingestão de proteínas, sódio, potássio e fósforo. A quantidade exata dependerá do estágio da doença renal e das necessidades individuais de cada pessoa.
@@ -157,7 +62,7 @@ export function ServicesProvider({ children }) {
       description: "Emagrecimento saudável e duradouro",
       image: card3,
       link: "/services/3",
-      articleImage: "https://img.freepik.com/free-photo/beautiful-sporty-woman-kitchen-with-vegetables_1157-27980.jpg?t=st=1738280995~exp=1738284595~hmac=45033b797d022d79e054f55c422e8c3fd4df5c2c01c68d1329c61cdfb4c14e4a&w=996",
+      articleImage: obesidade,
       articleText: `A obesidade é uma condição complexa que requer uma abordagem multifacetada para um tratamento eficaz. Um dos pilares fundamentais para o emagrecimento saudável e duradouro é uma alimentação equilibrada e personalizada.
 
       O objetivo não é apenas perder peso rapidamente, mas sim adotar hábitos alimentares sustentáveis que promovam a saúde a longo prazo. Isso envolve aprender a fazer escolhas alimentares conscientes, entender as necessidades nutricionais do corpo e desenvolver uma relação saudável com a comida.
@@ -172,7 +77,7 @@ export function ServicesProvider({ children }) {
       description: "Nutrição para saúde do coração",
       image: cardio,
       link: "/services/4",
-      articleImage:"https://img.freepik.com/free-photo/top-view-healthy-food-world-heart-day_23-2148631061.jpg?t=st=1738281126~exp=1738284726~hmac=b224144930c915cf5906d26105db16ced5a218b9256cfc77fcb67a3e8ce89af8&w=996",
+      articleImage:cardio1,
       articleText: `A nutrição desempenha um papel crucial na saúde cardiovascular. Uma dieta adequada pode ajudar a prevenir doenças cardíacas, controlar fatores de risco como hipertensão e colesterol alto, e melhorar a qualidade de vida de pessoas com cardiopatias existentes.
 
       Uma alimentação saudável para o coração geralmente inclui uma variedade de frutas e vegetais, grãos integrais, proteínas magras e gorduras saudáveis. É importante limitar o consumo de alimentos ricos em gorduras saturadas, gorduras trans, sódio e açúcares adicionados.
@@ -187,7 +92,7 @@ export function ServicesProvider({ children }) {
       description: "Nutrição para você e seu bebê",
       image: gestante,
       link: "/services/5",
-      articleImage: "https://img.freepik.com/free-photo/pregnant-lady-eating-salad_23-2148352170.jpg?t=st=1738281177~exp=1738284777~hmac=9d1d3c78b664286e09c24ccd343f57e3076e925ccdacef2e51a871b871137983&w=996",
+      articleImage: gravida,
       articleText: `A nutrição durante a gravidez desempenha um papel fundamental no desenvolvimento saudável do bebê e no bem-estar da gestante. Uma alimentação adequada não só fornece os nutrientes necessários para o crescimento do feto, mas também ajuda a mãe a manter sua própria saúde durante este período importante.
 
       Durante a gravidez, as necessidades nutricionais aumentam significativamente. É essencial consumir uma variedade de alimentos ricos em proteínas, cálcio, ferro, ácido fólico e outros nutrientes essenciais. Um nutricionista especializado em nutrição pré-natal pode criar um plano alimentar personalizado que atenda a essas necessidades aumentadas.
@@ -202,7 +107,7 @@ export function ServicesProvider({ children }) {
       description: "Alimentação na terceira idade",
       image: idoso,
       link: "/services/6",
-      articleImage: "https://img.freepik.com/free-photo/beautiful-old-couple-prepare-food-kitchen_1157-28257.jpg?t=st=1738281482~exp=1738285082~hmac=db80dcb11ea6cc3f1765a2cfd14ad9ef89cf845b9eaab4dc64b2bb6e3c3c9950&w=996",
+      articleImage: idoso1,
       articleText: `A nutrição adequada na terceira idade é essencial para manter a saúde, a independência e a qualidade de vida. À medida que envelhecemos, nossas necessidades nutricionais mudam, e uma dieta bem planejada pode ajudar a prevenir ou gerenciar condições de saúde comuns em idosos.
 
       Um dos desafios da nutrição geriátrica é garantir uma ingestão adequada de nutrientes em menos calorias, já que o metabolismo tende a diminuir com a idade. É importante focar em alimentos ricos em nutrientes, como frutas, vegetais, grãos integrais, proteínas magras e gorduras saudáveis.
@@ -219,7 +124,7 @@ export function ServicesProvider({ children }) {
       description: "Controle natural da pressão arterial através de uma alimentação equilibrada",
       image: hiper,
       link: "/services/7",
-      articleImage: "https://img.freepik.com/free-photo/high-angle-flexitarian-diet-food-assortment_23-2148955548.jpg?t=st=1738281565~exp=1738285165~hmac=a2713396b5bedfe2f605f152519bdc9f52c18e2370dfc6c6cfdb868e565d8e34&w=996",
+      articleImage: hipertensao,
       articleText: `A hipertensão, ou pressão alta, é uma condição que pode ser significativamente influenciada pela dieta. Uma alimentação equilibrada e adequada pode ajudar a controlar a pressão arterial de forma natural, reduzindo a necessidade de medicamentos ou complementando o tratamento médico.
 
       A Dieta DASH (Dietary Approaches to Stop Hypertension) é uma abordagem nutricional comprovada para reduzir a pressão arterial. Ela enfatiza o consumo de frutas, vegetais, grãos integrais, proteínas magras e laticínios com baixo teor de gordura, enquanto limita a ingestão de sódio, gorduras saturadas e açúcares adicionados.
@@ -236,7 +141,7 @@ export function ServicesProvider({ children }) {
       description: "Nutrição especializada para promover o desenvolvimento saudável",
       image: infantil,
       link: "/services/8",
-      articleImage: "https://img.freepik.com/free-photo/cute-little-girl-with-fruits-vegetables-light_169016-4217.jpg?t=st=1738281695~exp=1738285295~hmac=6365177346c53fec9cfaf9a14ec3abbfa2acd3fc1b89a33b4bdb54b5e36eb95b&w=826",
+      articleImage: infantil1,
       articleText: `A nutrição infantil desempenha um papel crucial no crescimento, desenvolvimento e estabelecimento de hábitos alimentares saudáveis para toda a vida. Uma alimentação adequada durante a infância não só promove o desenvolvimento físico e cognitivo, mas também ajuda a prevenir problemas de saúde futuros.
 
       É importante oferecer uma variedade de alimentos nutritivos desde cedo, incluindo frutas, vegetais, grãos integrais, proteínas magras e gorduras saudáveis. Isso ajuda a garantir que a criança receba todos os nutrientes necessários para um crescimento saudável.
@@ -270,7 +175,7 @@ Lembre-se, uma dieta vegana ou vegetariana bem planejada pode ser adequada para 
       description: "Sabor e saúde mediterrânea",
       image: med,
       link: "/services/10",
-      articleImage: "https://img.freepik.com/free-photo/ketogenic-low-carbs-diet-food-selection-white-wall_155003-27718.jpg?t=st=1738280475~exp=1738284075~hmac=b21b15d7612578a3be1aa6b8de5b32029feb80599ce9c33aa1ff6082440eff97&w=996",
+      articleImage: mediterraneo1,
       articleText: `A Dieta do Mediterrâneo é mais do que apenas um plano alimentar - é um estilo de vida que tem sido associado a numerosos benefícios à saúde. Originária dos países ao redor do Mar Mediterrâneo, esta abordagem alimentar é conhecida por sua ênfase em alimentos vegetais, azeite de oliva, peixes e consumo moderado de vinho.
 
       Os principais componentes da Dieta do Mediterrâneo incluem:
@@ -292,7 +197,7 @@ Lembre-se, uma dieta vegana ou vegetariana bem planejada pode ser adequada para 
       description: "Nutrição personalizada para atletas e praticantes de atividades físicas",
       image: esportivo,
       link: "/services/11",
-      articleImage: "https://img.freepik.com/free-photo/sporty-woman-kitchen-using-mobile-phone_1303-24736.jpg?t=st=1738280433~exp=1738284033~hmac=d8f92511d0a7906f2bb425587f9cd02fde871fff0196383659c9538830de175e&w=996",
+      articleImage: esportivo1,
       articleText: `A nutrição esportiva é um componente crucial para o desempenho atlético, recuperação e saúde geral de atletas e praticantes de atividades físicas. Uma dieta adequadamente planejada pode melhorar o desempenho, reduzir o risco de lesões e promover uma recuperação mais rápida após o exercício.
 
       As necessidades nutricionais de um atleta variam dependendo do tipo de esporte, intensidade do treinamento, fase da temporada e objetivos individuais. Um plano nutricional para esportistas geralmente foca em:

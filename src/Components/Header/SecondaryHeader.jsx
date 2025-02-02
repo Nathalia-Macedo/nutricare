@@ -1,12 +1,14 @@
 import { useHeader } from "../../Context/HeaderContext"
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import { Link } from "react-router-dom"
 import { AgendarConsultaButton } from "../AgendarConsultaButton"
-
 export function SecondaryHeader() {
   const headerData = useHeader()
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  useEffect(() => {
+    console.log('SecondaryHeader montado');
+  }, []);
   const handleNavClick = () => {
     setMobileMenuOpen(false) // Fecha o menu mobile após clicar
   }

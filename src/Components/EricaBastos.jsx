@@ -1,7 +1,11 @@
 import { GraduationCap } from "lucide-react"
 import Erica from '../Assets/Erica.png'
 import { Link } from "react-router-dom"
+import {useEffect} from 'react'
 export default function EricaProfile() {
+  useEffect(() => {
+    console.log('Erica montado');
+  }, []);
   return (
     <div className="max-w-6xl mx-auto px-4 md:px-8 py-8 flex flex-col md:flex-row-reverse gap-8 md:gap-12">
       <div className="relative flex-1 md:-mr-8">
