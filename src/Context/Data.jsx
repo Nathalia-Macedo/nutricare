@@ -1,192 +1,15 @@
-// export const recipes = [
-//     {
-//       id: 1,
-//       title: "Smoothie Bowl de Frutas Vermelhas",
-//       description: "Uma opção refrescante e nutritiva para o café da manhã.",
-//       image: "https://img.freepik.com/free-photo/ceramic-bowl-delicious-acai-brazilian-dessert_23-2149788549.jpg?t=st=1738266846~exp=1738270446~hmac=60482830075b4882866109849f78942f0f0d5ee20863dbf4047f06964fa031c5&w=360",
-//       categories: ["Todas", "Baixa Caloria", "Vegetariana", "Vegana"],
-//       ingredients: [
-//         "1 xícara de frutas vermelhas congeladas",
-//         "1 banana congelada",
-//         "1/2 xícara de leite vegetal",
-//         "1 colher de mel ou xarope de ácer",
-//         "Granola para decorar",
-//         "Frutas frescas para decorar",
-//       ],
-//       instructions: [
-//         "No liquidificador, bata as frutas vermelhas, banana e leite até obter uma consistência cremosa.",
-//         "Transfira para uma tigela.",
-//         "Decore com granola e frutas frescas.",
-//         "Sirva imediatamente.",
-//       ],
-//       prepTime: "10 minutos",
-//     },
-//     {
-//       id: 4,
-//       title: "Bowl de Quinoa com Frango",
-//       description: "Refeição nutritiva rica em proteínas.",
-//       image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=2080",
-//       categories: ["Todas", "Rica em Proteina"],
-//       ingredients: [
-//         "200g de peito de frango",
-//         "1 xícara de quinoa",
-//         "Mix de legumes",
-//         "Azeite de oliva",
-//         "Temperos a gosto",
-//       ],
-//       instructions: [
-//         "Cozinhe a quinoa conforme instruções.",
-//         "Grelhe o frango temperado.",
-//         "Monte o bowl com quinoa, frango e legumes.",
-//         "Finalize com azeite.",
-//       ],
-//       prepTime: "25 minutos",
-//     },
-//     {
-//       id: 8,
-//       title: "Brownie de Batata Doce",
-//       description: "Sobremesa saudável e deliciosa.",
-//       image: "https://img.freepik.com/free-photo/chocolate-brownies-white-plate-coffee-beans-wooden-spoon_1150-20871.jpg?t=st=1738266960~exp=1738270560~hmac=03b95c5e4d3037b7e5d24583fbb2e7db4264633af9868820f74c6d248c4afae9&w=996",
-//       categories: ["Todas", "Sobremesa Fit", "Sem Glúten"],
-//       ingredients: [
-//         "2 batatas doces médias",
-//         "1/2 xícara de cacau em pó",
-//         "3 ovos",
-//         "Mel a gosto",
-//         "Essência de baunilha",
-//       ],
-//       instructions: [
-//         "Cozinhe e amasse as batatas.",
-//         "Misture com os demais ingredientes.",
-//         "Coloque em forma untada.",
-//         "Asse por 25 minutos.",
-//       ],
-//       prepTime: "40 minutos",
-//     },
-//     {
-//       id: 14,
-//       title: "Bolinho de Arroz Integral",
-//       description: "Aperitivo saudável e saboroso.",
-//       image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=2025",
-//       categories: ["Todas", "Vegetariana", "Sem Glúten"],
-//       ingredients: [
-//         "2 xícaras de arroz integral cozido",
-//         "1 ovo",
-//         "1/4 xícara de queijo parmesão ralado",
-//         "Salsinha picada",
-//         "Sal e pimenta a gosto",
-//       ],
-//       instructions: [
-//         "Misture todos os ingredientes.",
-//         "Forme bolinhos.",
-//         "Frite em óleo quente ou asse no forno.",
-//         "Sirva quente.",
-//       ],
-//       prepTime: "30 minutos",
-//     },
-//     {
-//       id: 15,
-//       title: "Salada de Frutas com Iogurte",
-//       description: "Sobremesa refrescante e nutritiva.",
-//       image: "https://img.freepik.com/free-photo/fruit-salad-with-yoghurt_144627-34422.jpg?t=st=1738267091~exp=1738270691~hmac=fba01556b3b883d26d95fce9f4cb470679c5d89531519091292d4c2e1c488259&w=360",
-//       categories: ["Todas", "Baixa Caloria", "Vegetariana"],
-//       ingredients: ["Mix de frutas da estação", "Iogurte natural", "Granola", "Mel", "Hortelã para decorar"],
-//       instructions: [
-//         "Corte as frutas em pedaços.",
-//         "Misture com o iogurte natural.",
-//         "Adicione granola por cima.",
-//         "Regue com mel.",
-//         "Decore com folhas de hortelã.",
-//       ],
-//       prepTime: "10 minutos",
-//     },
-//     {
-//       id: 16,
-//       title: "Hambúrguer de Grão-de-Bico",
-//       description: "Opção vegetariana rica em proteínas.",
-//       image: "https://img.freepik.com/free-photo/vegan-burgers-with-quinoa-vegetables_661915-276.jpg?t=st=1738266791~exp=1738270391~hmac=e346b39f033f0dc0d22ac0333645dbcf28a9a569694a0e2311958059c204f1ca&w=996",
-//       categories: ["Todas", "Vegetariana", "Vegana", "Rica em Proteina"],
-//       ingredients: [
-//         "2 xícaras de grão-de-bico cozido",
-//         "1/2 cebola picada",
-//         "2 dentes de alho",
-//         "1/4 xícara de farinha de aveia",
-//         "Temperos a gosto",
-//       ],
-//       instructions: [
-//         "Processe o grão-de-bico com cebola e alho.",
-//         "Adicione a farinha de aveia e temperos.",
-//         "Forme hambúrgueres.",
-//         "Grelhe ou asse até dourar.",
-//       ],
-//       prepTime: "25 minutos",
-//     },
-//     {
-//       id: 20,
-//       title: "Pudim de Chia com Frutas",
-//       description: "Sobremesa nutritiva e fácil de preparar.",
-//       image: "https://images.unsplash.com/photo-1542691457-cbe4df041eb2?auto=format&fit=crop&q=80&w=2487",
-//       categories: ["Todas", "Sobremesa Fit", "Vegetariana", "Vegana", "Sem Glúten"],
-//       ingredients: [
-//         "1/4 xícara de sementes de chia",
-//         "1 xícara de leite vegetal",
-//         "1 colher de sopa de mel ou xarope de bordo",
-//         "Essência de baunilha",
-//         "Frutas frescas para decorar",
-//       ],
-//       instructions: [
-//         "Misture a chia com o leite vegetal, mel e baunilha.",
-//         "Deixe na geladeira por pelo menos 4 horas ou durante a noite.",
-//         "Antes de servir, decore com frutas frescas.",
-//         "Sirva gelado.",
-//       ],
-//       prepTime: "5 minutos + 4 horas de geladeira",
-//     },
-//     {
-//       id: 21,
-//       title: "Torta de Frango Fit",
-//       description: "Versão saudável da clássica torta de frango.",
-//       image: "https://images.unsplash.com/photo-1619894991209-9f9694be045a?auto=format&fit=crop&q=80&w=2070",
-//       categories: ["Todas", "Rica em Proteina", "Baixa Caloria"],
-//       ingredients: [
-//         "2 xícaras de frango cozido e desfiado",
-//         "1 xícara de farinha de aveia",
-//         "2 ovos",
-//         "1/2 xícara de iogurte natural",
-//         "Legumes picados (cenoura, ervilha, milho)",
-//       ],
-//       instructions: [
-//         "Misture a farinha de aveia, ovos e iogurte para a massa.",
-//         "Forre uma forma com metade da massa.",
-//         "Adicione o recheio de frango e legumes.",
-//         "Cubra com o restante da massa e asse por 30 minutos.",
-//       ],
-//       prepTime: "45 minutos",
-//     },
-//     {
-//       id: 27,
-//       title: "Salada de Quinoa com Manga e Hortelã",
-//       description: "Salada refrescante e cheia de sabor.",
-//       image: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&q=80&w=2187",
-//       categories: ["Todas", "Vegetariana", "Vegana", "Sem Glúten"],
-//       ingredients: [
-//         "1 xícara de quinoa cozida",
-//         "1 manga madura em cubos",
-//         "1/4 xícara de hortelã fresca picada",
-//         "1/4 xícara de amêndoas laminadas",
-//         "Suco de limão",
-//         "Azeite de oliva",
-//       ],
-//       instructions: [
-//         "Misture a quinoa cozida com a manga e hortelã.",
-//         "Adicione as amêndoas laminadas.",
-//         "Tempere com suco de limão e azeite.",
-//         "Sirva frio ou em temperatura ambiente.",
-//       ],
-//       prepTime: "15 minutos",
-//     },
-//   ]
-
+import brownie from '../Assets/Recipes/brownie.jpg'
+import lentilha from '../Assets/Recipes/lentilha.jpg'
+import omelete from '../Assets/Recipes/omelete.jpg'
+import salada from '../Assets/Recipes/salada.jpg'
+import bico from '../Assets/Recipes/bico.jpg'
+import torta from '../Assets/Recipes/torta.jpg'
+import wrapHumus from '../Assets/Recipes/wrapHumus.jpg'
+import Atum from '../Assets/Recipes/atum.jpg'
+import sopa from '../Assets/Recipes/sopa.jpg'
+import abobora from '../Assets/Recipes/abobora.jpg'
+import bolo from '../Assets/Recipes/bolo.jpg'
+import acai from '../Assets/Recipes/acai.jpg'
 export const recipes = [
     {
       id: 1,
@@ -235,7 +58,7 @@ export const recipes = [
       id: 3,
       title: "Brownie de Batata Doce",
       description: "Sobremesa saudável e deliciosa.",
-      image: "https://img.freepik.com/free-photo/chocolate-brownies-white-plate-coffee-beans-wooden-spoon_1150-20871.jpg?t=st=1738266960~exp=1738270560~hmac=03b95c5e4d3037b7e5d24583fbb2e7db4264633af9868820f74c6d248c4afae9&w=996",
+      image: brownie,
       categories: ["Todas", "Sobremesa Fit", "Sem Glúten"],
       ingredients: [
         "2 batatas doces médias",
@@ -293,7 +116,7 @@ export const recipes = [
       id: 6,
       title: "Hambúrguer de Grão-de-Bico",
       description: "Opção vegetariana rica em proteínas.",
-      image: "https://img.freepik.com/free-photo/vegan-burgers-with-quinoa-vegetables_661915-276.jpg?t=st=1738266791~exp=1738270391~hmac=e346b39f033f0dc0d22ac0333645dbcf28a9a569694a0e2311958059c204f1ca&w=996",
+      image: bico,
       categories: ["Todas", "Vegetariana", "Vegana", "Rica em Proteina"],
       ingredients: [
         "2 xícaras de grão-de-bico cozido",
@@ -335,7 +158,7 @@ export const recipes = [
       id: 8,
       title: "Torta de Frango Fit",
       description: "Versão saudável da clássica torta de frango.",
-      image: "https://img.freepik.com/free-photo/italian-frittata-made-with-spinach-tomatoes-onion-peppers-white-wooden-table_123827-30314.jpg?t=st=1738268413~exp=1738272013~hmac=278e1b2c5b53bb3f88ec24c33f47d6573eadd00f32c353c646ef5dc37fdc9e89&w=996",
+      image: torta,
       categories: ["Todas", "Rica em Proteina", "Baixa Caloria"],
       ingredients: [
         "2 xícaras de frango cozido e desfiado",
@@ -356,7 +179,7 @@ export const recipes = [
       id: 9,
       title: "Salada de Quinoa com Manga e Hortelã",
       description: "Salada refrescante e cheia de sabor.",
-      image: "https://img.freepik.com/free-photo/grilled-chicken-with-vegetable-pomegranate-fruits-salad-plate_74190-753.jpg?t=st=1738268705~exp=1738272305~hmac=04fc274133cce982cb36bf9e161c7bb754345b9607626fd4fbd5cac3e32893d6&w=360",
+      image: 'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38',
       categories: ["Todas", "Vegetariana", "Vegana", "Sem Glúten"],
       ingredients: [
         "1 xícara de quinoa cozida",
@@ -378,7 +201,7 @@ export const recipes = [
       id: 10,
       title: "Wrap de Atum com Abacate",
       description: "Lanche rápido e nutritivo.",
-      image: "https://img.freepik.com/free-photo/mexican-food-still-life_23-2148131294.jpg?t=st=1738268617~exp=1738272217~hmac=fd8044227e9358ab69964becc4cecab34aa6d115b0ff9426bdd49fa8163fa980&w=996",
+      image: Atum,
       categories: ["Todas", "Rica em Proteina", "Baixa Caloria"],
       ingredients: [
         "1 tortilha integral",
@@ -420,7 +243,7 @@ export const recipes = [
       id: 12,
       title: "Sopa de Legumes com Frango",
       description: "Refeição reconfortante e nutritiva.",
-      image: "https://img.freepik.com/free-photo/tasty-soup-pan-gray-surface-close-up-copy-space_176420-7000.jpg?t=st=1738268874~exp=1738272474~hmac=904009cc5ede631596f5912bb7c26848a8d448c5257ca7c1f1cab0e72bdcae0b&w=996",
+      image: sopa,
       categories: ["Todas", "Rica em Proteina", "Baixa Caloria"],
       ingredients: [
         "Peito de frango em cubos",
@@ -462,7 +285,7 @@ export const recipes = [
       id: 14,
       title: "Salada de Lentilha com Vegetais Assados",
       description: "Refeição completa e rica em fibras.",
-      image: "https://img.freepik.com/free-photo/lentil-salad-with-peppersonion-carrot-bowl_123827-21489.jpg?t=st=1738268992~exp=1738272592~hmac=8ee892b0750c4bb693df5046b735a9234720bb821ff6d654d7f4ef5f7f53f84b&w=996",
+      image: lentilha,
       categories: ["Todas", "Vegetariana", "Vegana", "Rica em Proteina"],
       ingredients: [
         "1 xícara de lentilhas cozidas",
@@ -504,7 +327,7 @@ export const recipes = [
       id: 16,
       title: "Omelete de Claras com Espinafre",
       description: "Café da manhã rico em proteínas e baixo em gordura.",
-      image: "https://img.freepik.com/free-photo/plate-with-omlette-table_23-2148601023.jpg?t=st=1738269126~exp=1738272726~hmac=8a0022e8b2f9d146d98403adca277e95cc5884c8516cc1e4581af5ffb62fe38d&w=826",
+      image: omelete,
       categories: ["Todas", "Rica em Proteina", "Baixa Caloria"],
       ingredients: [
         "3 claras de ovo",
@@ -524,7 +347,7 @@ export const recipes = [
       id: 17,
       title: "Salada de Grão-de-Bico Mediterrânea",
       description: "Salada refrescante e rica em fibras.",
-      image: "https://img.freepik.com/free-photo/high-angle-salad-with-chickpeas-carrots_23-2148700443.jpg?t=st=1738269240~exp=1738272840~hmac=295048f08c95e0f1c88d561a69b4a4e99a303ed1f19e2cdbcf553dad01278bc2&w=740",
+      image: salada,
       categories: ["Todas", "Vegetariana", "Vegana", "Rica em Proteina"],
       ingredients: [
         "1 lata de grão-de-bico",
@@ -546,7 +369,7 @@ export const recipes = [
       id: 18,
       title: "Bowl de Açaí",
       description: "Sobremesa gelada e nutritiva.",
-      image: "https://img.freepik.com/free-photo/ceramic-bowl-delicious-acai-brazilian-dessert_23-2149788578.jpg?t=st=1738269294~exp=1738272894~hmac=4af5bb28aefa7220b3a6002b9c4ef7eac3e62475f35cd3f3e621985315ca63eb&w=996",
+      image: acai,
       categories: ["Todas", "Vegetariana", "Vegana", "Sem Glúten"],
       ingredients: [
         "200g de polpa de açaí congelada",
@@ -588,7 +411,7 @@ export const recipes = [
       id: 20,
       title: "Bolo de Banana sem Açúcar",
       description: "Sobremesa saudável e deliciosa.",
-      image: "https://img.freepik.com/free-photo/delicious-banana-bread-table_23-2150764396.jpg?t=st=1738269420~exp=1738273020~hmac=9b68013681e01d0060c38a711c99c1f750bcbe7b8316145009333eee4130bbfc&w=996",
+      image: bolo,
       categories: ["Todas", "Sobremesa Fit", "Sem Glúten"],
       ingredients: [
         "3 bananas maduras",
@@ -610,7 +433,7 @@ export const recipes = [
         id: 22,
         title: "Sopa de Abóbora com Gengibre",
         description: "Sopa cremosa e reconfortante.",
-        image: "https://img.freepik.com/free-photo/autumn-food-soup-pumpkin-leaves_23-2148656290.jpg?t=st=1738269547~exp=1738273147~hmac=4325f168ce7a0fd43f9c4106b26f4eb46e20d7f6f1d088aedf3f93c4096e00b6&w=996",
+        image: abobora,
         categories: ["Todas", "Vegetariana", "Vegana", "Baixa Caloria"],
         ingredients: [
           "1 abóbora média cortada em cubos",
@@ -677,7 +500,7 @@ export const recipes = [
         id: 26,
         title: "Wrap de Hummus e Vegetais",
         description: "Lanche vegetariano rápido e saudável.",
-        image: "http://img.freepik.com/free-photo/tasty-vegan-sandwich-wooden-table_144627-42744.jpg?t=st=1738269774~exp=1738273374~hmac=a995989049002b88c00aa175a43174b593434de1823b63c3de9db848561fce0c&w=996",
+        image: wrapHumus,
         categories: ["Todas", "Vegetariana", "Vegana"],
         ingredients: [
           "1 tortilha integral",
