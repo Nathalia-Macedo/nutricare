@@ -2,6 +2,7 @@ import { GraduationCap } from "lucide-react"
 import Erica from '../Assets/Erica.png'
 import { Link } from "react-router-dom"
 import {useEffect} from 'react'
+import { AgendarConsultaButton } from "./AgendarConsultaButton"
 export default function EricaProfile() {
   useEffect(() => {
     console.log('Erica montado');
@@ -53,12 +54,7 @@ export default function EricaProfile() {
           </div>
         </div>
 
-        <Link
-          to="/agendamento?profissional=erica-bastos"
-          className="inline-block bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-full transition-colors text-center"
-        >
-          Agendar consulta com Érica
-        </Link>
+       <AgendarConsultaButton/>
       </div>
     </div>
   )
