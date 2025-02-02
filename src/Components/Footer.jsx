@@ -10,8 +10,7 @@ export default function Footer() {
     e.preventDefault()
     const alturaMetros = altura / 100
     const imc = peso / (alturaMetros * alturaMetros)
-    setResultado(imc.toFixed(2))
-  }
+    setResultado(imc.toFixed(1).padStart(4, '0'))  }
 
   return (
     <footer style={{border:"3px solid green"}} className="bg-[#27AE60]">
@@ -39,9 +38,7 @@ export default function Footer() {
               <a href="#receitas" className="hover:text-[#27AE60] transition-colors">
                 Receitas
               </a>
-              <a href="/contato" className="hover:text-[#27AE60] transition-colors">
-                Contato
-              </a>
+            
             </nav>
           </div>
 

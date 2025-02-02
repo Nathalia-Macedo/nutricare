@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom"
 import { useServices } from "../Context/ServiceContext"
-import { Calendar, ChevronLeft } from "lucide-react"
+import { Calendar, ChevronLeft, Clock } from 'lucide-react'
 import { SecondaryHeader } from "../Components/Header/SecondaryHeader"
 import { AgendarConsultaButton } from "../Components/AgendarConsultaButton"
 import { useNavigate } from "react-router-dom"
@@ -81,11 +81,17 @@ export default function ServiceArticle() {
                 />
                 <div className="p-6">
                   <h1 className="text-3xl font-bold text-gray-900 mb-4">{service.title}</h1>
+                  
                   <div className="flex items-center gap-4 text-sm text-gray-500 mb-8">
-                   
-                    <span>22 jun 2023</span>
-                    <span>5min de leitura</span>
-                  </div>
+  <span className="flex items-center">
+    <Calendar className="w-4 h-4 mr-1" />
+    22 jun 2023
+  </span>
+  <span className="flex items-center">
+    <Clock className="w-4 h-4 mr-1" />
+    5min de leitura
+  </span>
+</div>
                   <div className="prose max-w-none space-y-6">
                     {paragraphs.map((paragraph, index) => (
                       <div

@@ -4,11 +4,8 @@ import { ArrowRight, Clock, Users, ArrowLeft } from "lucide-react"
 import { recipes } from "../Context/Data"
 import { Header } from "../Components/Header/Header"
 import Footer from "../Components/Footer"
-
 export default function SingleRecipePage() {
   
- 
-
   const { id } = useParams()
   const currentIndex = recipes.findIndex((r) => r.id === Number.parseInt(id))
   const suggestedRecipe = recipes[(currentIndex + 1) % recipes.length]
@@ -17,10 +14,10 @@ export default function SingleRecipePage() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [])
+  }, [id])
 
   const handleBackToRecipes = () => {
-    navigate("/")
+    navigate('/receitas')
     setTimeout(() => {
       const recipesSection = document.getElementById("receitas")
       if (recipesSection) {
