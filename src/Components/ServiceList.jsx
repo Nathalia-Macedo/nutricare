@@ -34,16 +34,16 @@ export default function ServicesList() {
             }}
           >
             <path
-              fill="black"
+              fill="white"
               d="M0,0L48,5.3C96,11,192,21,288,26.7C384,32,480,32,576,37.3C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
             ></path>
           </svg>
         </div>
       </div>
 
-      <div id="especialidades" className="bg-black w-full py-16" style={{ marginTop: "-2px" }}>
+      <div id="especialidades" className="bg-black w-full py-16 branco" style={{ marginTop: "-2px" }}>
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-white text-3xl font-bold mb-10 text-center md:text-left">Nossas Especialidades</h2>
+          <h2 className="text-black text-4xl font-bold mb-10 text-center md:text-left">Nossas Especialidades</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center md:justify-items-start">
             {services.map((service) => (
               <div key={service.id}>
