@@ -45,7 +45,7 @@ import RecipesHero from "../Pages/Recipes"
 import RecipePage from "../Components/RecipesPage"
 import SingleRecipePage from "../Components/SingleRecipePage"
 import ServiceArticle from "../Pages/ServiceArticle"
-
+import BioimpedanciaPage from "../Pages/Bioimpedância"
 function App() {
   return (
     <BrowserRouter>
@@ -60,6 +60,7 @@ function App() {
                 <Route path="/receitas" element={<RecipesHero />} />
                 <Route path="/services/:serviceId" element={<ServiceArticle />} />
                 <Route path="/receita/:id" element={<SingleRecipePage />} />
+                <Route path="/bioimpedancia" element={<BioimpedanciaPage />} />
               </Routes>
             </div>
           </ServicesProvider>
