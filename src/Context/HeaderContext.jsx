@@ -6,7 +6,7 @@ const HeaderContext = createContext()
 
 const defaultHeaderData = {
   contactInfo: {
-    phone: "(71) 3354-1825",
+    phone: "(71)3354-1824",
     whatsapp: "(71)98850-3333",
     email: "contato.nutricare1@gmail.com",
     socialMedia: {

@@ -25,11 +25,19 @@ export default function AboutSection() {
           <div className="md:w-1/2 text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 font-poppins">Quem Somos</h2>
             <p className="text-lg mb-8 leading-relaxed font-poppins">
-              Na Nutricare, acreditamos que o verdadeiro cuidado vai além da consulta. Por isso, oferecemos um
-              atendimento completo que começa antes mesmo de sua primeira visita e continua após o acompanhamento
-              inicial. Nosso objetivo é garantir que você tenha o suporte necessário para alcançar e manter uma vida
-              saudável. Com profissionais dedicados e planos personalizados, estamos prontos para transformar sua
-              jornada de saúde em um sucesso!
+            Acreditamos que a nutrição é a base para uma vida plena e com energia. Por isso, desde 2010, a Nutricare se dedica a transformar a vida de nossos pacientes, através de um cuidado nutricional completo e personalizado.
+<br/><br/>
+Nossas Nutricionistas são especialistas, experientes e apaixonados pela nutrição está comprometida em ajudar você a conquistar mais saúde, bem-estar e qualidade de vida, através de planos alimentares personalizados e acompanhamento contínuo.
+<br/><br/>
+Aqui na Nutricare vamos ajudar a alcançar seus objetivos de forma sustentável e prazerosa, seja emagrecer, ganhar massa muscular, controlar doenças crônicas ou simplesmente aprender a se alimentar de forma mais saudável.<br/><br/>
+Com a Nutricare, você terá:
+<br/><br/>
+•	Acompanhamento individualizado e personalizado para suas necessidades e objetivos.
+<br/>
+•	Plano alimentar completo e adaptado às suas preferências e estilo de vida.<br/>
+•	Suporte e motivação para alcançar seus resultados e manter hábitos saudáveis a longo prazo.<br/>
+•	Resultados comprovados e uma vida mais leve e saudável.<br/><br/>
+Nutricare: invista na sua saúde e bem-estar, e conquiste a vida que você merece!
             </p>
            
              <Link className="bg-white text-green-600 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors font-poppins" to="/profissionais"> Conheça nossas Profissionais</Link> 
