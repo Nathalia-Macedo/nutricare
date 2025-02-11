@@ -1,7 +1,7 @@
 "use client"
 
 import { createContext, useContext } from "react"
-
+import logo from '../Assets/logo.png'
 const HeaderContext = createContext()
 
 const defaultHeaderData = {
@@ -15,7 +15,7 @@ const defaultHeaderData = {
     },
   },
   logo: {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-nutricare-removebg-preview-CgZ2diJEiY18lWAO62n68stiPESM6Y.png",
+    src: logo,
     alt: "Nutricare",
   },
   navigation: [

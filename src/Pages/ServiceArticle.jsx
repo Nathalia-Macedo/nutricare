@@ -123,22 +123,6 @@ export default function ServiceArticle() {
                   </p>
               <AgendarConsultaButton/>
                 </div>
-
-                {/* Related Articles Card */}
-                <div className="bg-white rounded-2xl p-6 shadow-sm">
-                  <h3 className="text-xl font-bold mb-4">Artigos Relacionados</h3>
-                  <div className="space-y-4">
-                    {relatedArticles.map((article, index) => (
-                      <a key={index} href={article.link} className="block">
-                        <h4 className="font-semibold text-gray-900 mb-1">{article.title}</h4>
-                        <p className="text-sm text-gray-500">{article.description}</p>
-                      </a>
-                    ))}
-                  </div>
-                  <button className="w-full mt-6 py-2 px-4 border border-[#31A431] text-[#31A431] rounded-lg hover:bg-[#E8FFE8] transition-colors">
-                    Ver todos os artigos
-                  </button>
-                </div>
               </div>
             </div>
           </div>

@@ -127,6 +127,13 @@ export function SecondaryHeader() {
                 >
                   Sobre Nós
                 </Link>
+                <Link
+                  to="/profissionais"
+                  onClick={handleNavClick}
+                  className="text-gray-700 hover:text-green-600 transition-colors font-poppins cursor-pointer"
+                >
+                  Sobre Nós
+                </Link>
               </nav>
               <AgendarConsultaButton className="justify-center" />
             </div>
