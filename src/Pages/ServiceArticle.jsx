@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom"
 import { useServices } from "../Context/ServiceContext"
 import { Calendar, ChevronLeft, Clock } from 'lucide-react'
-import { SecondaryHeader } from "../Components/Header/SecondaryHeader"
+import Header from "../Components/Header/Header"
 import { AgendarConsultaButton } from "../Components/AgendarConsultaButton"
 import { useNavigate } from "react-router-dom"
 import Footer from "../Components/Footer"
@@ -46,7 +46,7 @@ export default function ServiceArticle() {
   }
   return (
     <>
-      <SecondaryHeader />
+      <Header />
       <div className="container mx-auto px-4 py-4">
          <Link  onClick={handleBackToHome}
      to="/" 
