@@ -1,14 +1,13 @@
 import { Clock, Activity, BarChartIcon as ChartBar, Scale, Heart, Zap } from "lucide-react"
 import { AgendarConsultaButton } from "../Components/AgendarConsultaButton"
-import { SecondaryHeader } from "../Components/Header/SecondaryHeader"
 import Footer from "../Components/Footer"
 import bio from '../Assets/bio.png'
 import bio2 from '../Assets/bio2.png'
-import { color } from "framer-motion"
+import Header from "../Components/Header/Header"
 export default function BioimpedanciaPage() {
   return (
     <>
-      <SecondaryHeader />
+      <Header />
       <main className="bg-gradient-to-b from-white to-green-50">
         {/* Hero Section */}
         <section className="relative overflow-hidden">
@@ -16,7 +15,7 @@ export default function BioimpedanciaPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-                  Conheça seu corpo em detalhes com a Bioimpedância InBody270
+                  Conheça seu corpo em detalhes com exame de bioimpedância InBody270
                 </h1>
                 <p className="text-xl text-gray-600">
                   Descubra sua composição corporal de forma precisa e rápida. Em apenas 15 segundos, você terá uma

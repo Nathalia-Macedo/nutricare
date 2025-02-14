@@ -38,7 +38,7 @@ export default function EricaProfile() {
         <div className="space-y-2">
           <div className="flex items-center gap-2">
             <GraduationCap className="text-green-600" />
-            <span>Graduada em Nutrição - UNEB</span>
+            <span>Graduada em Nutrição em 2012 - UNEB</span>
           </div>
           <div className="flex items-center gap-2">
             <GraduationCap className="text-green-600" />

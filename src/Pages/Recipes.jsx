@@ -1,12 +1,12 @@
 import { Clock, Utensils, Coffee } from 'lucide-react'
 import RecipePage from "../Components/RecipesPage"
-import { SecondaryHeader } from "../Components/Header/SecondaryHeader"
+import Header from '../Components/Header/Header'
 import Footer from "../Components/Footer"
 
 export default function RecipesHero() {
   return (
     <>
-      <SecondaryHeader />
+      <Header />
       <div className="relative bg-[#FFB84D] overflow-hidden">
         {/* Curved bottom - adjusted height and curve */}
         <div 

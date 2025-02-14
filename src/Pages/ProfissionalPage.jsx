@@ -3,13 +3,12 @@ import RenataSection from '../Components/RenataSanches';
 import EricaProfile from '../Components/EricaBastos';
 import WhyChooseUs from '../Components/PorQueNosEscolher';
 import CtaSection from '../Components/CtaSection';
-import { SecondaryHeader } from '../Components/Header/SecondaryHeader';
-
+import Header from '../Components/Header/Header';
 const ProfissionaisPage = () => {
    
   return (
     <>
-    <SecondaryHeader/>
+    <Header/>
       <RenataSection />
       <EricaProfile />
       <WhyChooseUs />

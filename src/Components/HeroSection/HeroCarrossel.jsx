@@ -8,7 +8,8 @@ import mobile from "../../Assets/mobile3.png"
 import desktop2 from "../../Assets/desktop2.png"
 import mobile2 from '../../Assets/mobile2.png'
 import mobile1 from '../../Assets/mobile.png'
-import desktop4 from '../../Assets/desktop4.png'
+import slide4 from '../../Assets/slide4BG.png'
+import mobile4 from '../../Assets/mobile4.png'
 const slides = [
   {
     id: 1,
@@ -35,9 +36,9 @@ const slides = [
   {
     id: 4,
     desktopImage:
-    desktop4,
+    slide4,
     mobileImage:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20178-qlxmMzTmj9YSWmauHWzxbJCg82S3VN.png",
+    mobile4,
     targetSection: "specialties"
   },
 ]
@@ -69,7 +70,7 @@ export default function HeroCarousel() {
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       pagination={{ clickable: true }}
-      autoplay={{ delay: 5000 }}
+      autoplay={{ delay: 15000 }}
       className="w-full h-screen [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
     >
       {slides.map((slide) => (

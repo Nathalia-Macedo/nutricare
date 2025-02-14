@@ -82,7 +82,7 @@ export default function AboutSection() {
                 personalizado.
               </p>
               <p>
-                Nossas Nutricionistas são especialistas, experientes e apaixonados pela nutrição está comprometida em
+                Nossas Nutricionistas são especialistas, experientes e apaixonadas pela nutrição, estão comprometidas em
                 ajudar você a conquistar mais saúde, bem-estar e qualidade de vida, através de planos alimentares
                 personalizados e acompanhamento contínuo.
               </p>

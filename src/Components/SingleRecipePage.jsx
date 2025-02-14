@@ -2,7 +2,7 @@ import { useParams, Link, useNavigate } from "react-router-dom"
 import {useEffect} from 'react'
 import { ArrowRight, Clock, Users, ArrowLeft } from "lucide-react"
 import { recipes } from "../Context/Data"
-import { Header } from "../Components/Header/Header"
+import Header from "./Header/Header"
 import Footer from "../Components/Footer"
 export default function SingleRecipePage() {
   

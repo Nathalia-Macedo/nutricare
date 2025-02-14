@@ -43,12 +43,13 @@ function RenataSection() {
             <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">Obesidade</span>
             <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">Hipertensão</span>
             <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">Nutrição Clínica</span>
+            <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">Saúde do idoso</span>
           </div>
 
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <GraduationCap className="text-green-600" />
-              <span>Nutricionista formada pela UFBA</span>
+              <span>Nutricionista formada em 2005 pela UFBA</span>
             </div>
             <div className="flex items-center gap-2">
               <GraduationCap className="text-green-600" />
