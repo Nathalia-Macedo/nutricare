@@ -128,17 +128,18 @@ export default function HeroCarousel() {
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />
-
+  
           {/* Content Overlay */}
           <div className="relative z-10 w-full h-full flex flex-col justify-between p-6">
-            <div className="space-y-4">
+            {/* Descrição */}
+            <div style={{ marginBottom: "0.5rem" }}> {/* Espaçamento reduzido */}
               <h2 className="text-[#31A431] text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
               <p className="text-gray-700 text-sm font-bold">{slide.mobileContent.description}</p>
             </div>
-
+  
             {/* Features List */}
             <div className="flex-1 flex flex-col justify-center">
-              <div className="space-y-2">
+              <div style={{ gap: "0.5rem", display: "flex", flexDirection: "column" }}> {/* Espaçamento reduzido */}
                 {slide.mobileContent.features.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     {feature.icon}
@@ -147,7 +148,7 @@ export default function HeroCarousel() {
                 ))}
               </div>
             </div>
-
+  
             {/* Button */}
             <button
               onClick={handleWhatsAppClick}
@@ -157,8 +158,9 @@ export default function HeroCarousel() {
             </button>
           </div>
         </div>
-      )
+      );
     }
+  };
 
     if (slide.id === 2) {
       return (
