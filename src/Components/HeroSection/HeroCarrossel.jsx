@@ -138,7 +138,7 @@ export default function HeroCarousel() {
 
             {/* Features List */}
             <div className="flex-1 flex flex-col justify-center">
-              <div className="space-y-4">
+              <div className="space-y-2">
                 {slide.mobileContent.features.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     {feature.icon}
