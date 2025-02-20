@@ -21,12 +21,9 @@ const slides = [
       description: (
         <>
           Receitas exclusivas,
-          <br />
           profissionais especializados
-          <br />e um plano nutricional feito
-          <br />
+          e um plano nutricional feito
           para você.
-          <br />
           Descubra como alcançar mais energia, equilíbrio e bem-estar.
         </>
       ),
