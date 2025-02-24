@@ -172,7 +172,7 @@ export default function HeroCarousel() {
             <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-8">
             <button
               onClick={(e) => {
                 e.stopPropagation()
