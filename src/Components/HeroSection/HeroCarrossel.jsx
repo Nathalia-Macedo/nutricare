@@ -22,9 +22,9 @@ const slides = [
         <>
           Receitas exclusivas,
           profissionais especializados
-          e um plano nutricional feito
-          para você.
-          Descubra como alcançar mais energia, equilíbrio e bem-estar.
+          e um plano nutricional<br/> feito
+          para você.<br/>
+          Descubra como alcançar<br/> mais energia, equilíbrio e bem-estar.
         </>
       ),
       features: [
@@ -121,7 +121,7 @@ export default function HeroCarousel() {
   const renderMobileSlide = (slide) => {
     if (slide.id === 1) {
       return (
-        <div style={{minHeight:"80dvh"}} className="h-auto min-h-screen relative w-full">
+        <div  className="h-auto min-h-screen relative w-full">
           {/* Background Image */}
           <img
             src={slide.mobileImage || "/placeholder.svg"}
@@ -162,7 +162,7 @@ export default function HeroCarousel() {
 
     if (slide.id === 2) {
       return (
-        <div
+        <div  style={{minHeight:"80dvh"}} 
           className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-between"
           onClick={() => (window.location.href = "/profissionais")}
         >
@@ -197,7 +197,7 @@ export default function HeroCarousel() {
 
     if (slide.id === 3) {
       return (
-        <div
+        <div  style={{minHeight:"80dvh"}} 
           className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-around"
           onClick={() => (window.location.href = "/blog/3")}
         >
@@ -230,7 +230,7 @@ export default function HeroCarousel() {
 
     if (slide.id === 4) {
       return (
-        <div className="relative w-full h-full bg-white p-6 flex flex-col">
+        <div  style={{minHeight:"80dvh"}}  className="relative w-full h-full bg-white p-6 flex flex-col">
           <div className="flex-1 relative z-20">
             <h2 className="text-3xl font-bold leading-tight mb-8">
               Especialidades que Cuidam de Você em Cada Fase da Vida
