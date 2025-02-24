@@ -121,16 +121,16 @@ export default function HeroCarousel() {
   const renderMobileSlide = (slide) => {
     if (slide.id === 1) {
       return (
-        <div  className="h-auto min-h-screen relative w-full">
+        <div style={{minHeight:"80dvh"}} className="h-auto min-h-screen relative w-full">
           {/* Background Image */}
           <img
             src={slide.mobileImage || "/placeholder.svg"}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full object-cover"
           />
 
           {/* Content Overlay */}
-          <div className="relative z-10 w-full h-full flex flex-col justify-between p-6">
+          <div style={{minHeight:"80dvh"}} className="relative z-10 w-full flex flex-col p-6">
             <div className="space-y-4">
               <h2 className="text-[#31A431] text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
               <p className="text-gray-700 text-sm font-bold">{slide.mobileContent.description}</p>
@@ -305,7 +305,7 @@ export default function HeroCarousel() {
       modules={[Navigation, Pagination, Autoplay]}
       pagination={{ clickable: true }}
       autoplay={{ delay: 15000 }}
-      className="w-full h-screen [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
+      className="w-full max-h-[80vh] h-auto [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>{isMobile ? renderMobileSlide(slide) : renderDesktopSlide(slide)}</SwiperSlide>
