@@ -162,11 +162,11 @@ export default function HeroCarousel() {
 
     if (slide.id === 2) {
       return (
-        <div  style={{minHeight:"80dvh"}} 
+        <div  
           className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-between"
           onClick={() => (window.location.href = "/profissionais")}
         >
-          <div className="space-y-4">
+          <div style={{minHeight:"80dvh"}}  className="space-y-4">
             <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
             <p className="text-white text-sm">{slide.mobileContent.description}</p>
             <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
