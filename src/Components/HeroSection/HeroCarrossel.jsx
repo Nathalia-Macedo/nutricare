@@ -126,7 +126,7 @@ export default function HeroCarousel() {
           <img
             src={slide.mobileImage || "/placeholder.svg"}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full max-h-[80vh] object-cover"
           />
 
           {/* Content Overlay */}
