@@ -306,7 +306,7 @@ export default function HeroCarousel() {
       pagination={{ clickable: true }}
       autoplay={{ delay: 15000 }}
       className="w-full max-h-[80vh] h-auto [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
-      allowTouchMove={false}
+      
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>{isMobile ? renderMobileSlide(slide) : renderDesktopSlide(slide)}</SwiperSlide>
