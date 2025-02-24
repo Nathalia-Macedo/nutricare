@@ -121,7 +121,8 @@ export default function HeroCarousel() {
   const renderMobileSlide = (slide) => {
     if (slide.id === 1) {
       return (
-        <div className="relative w-full h-full">
+        <div style={{minHeight:'100dhv'
+        }} className="relative w-full">
           {/* Background Image */}
           <img
             src={slide.mobileImage || "/placeholder.svg"}
