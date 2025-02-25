@@ -55,7 +55,7 @@ const slides = [
     mobileContent: {
       title: "Conheça Renata Sanches e Nossa Equipe de Nutricionistas Especializadas",
       description:
-        "Com mais de 25 anos de experiência em nutrição clínica, Renata Sanches transforma vidas com plano alimentar personalizado e um cuidado que vai além. Continue com frase que já esta.",
+        "Com mais de 15 anos de experiência em nutrição clínica, Renata Sanches transforma vidas com plano alimentar personalizado e um cuidado que vai além. Continue com frase que já esta.",
       image: renataMobile,
       callToAction: "Clique aqui e conheça nossa equipe!",
     },
