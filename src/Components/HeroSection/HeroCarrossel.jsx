@@ -305,7 +305,7 @@ export default function HeroCarousel() {
     modules={[Navigation, Pagination, Autoplay]}
     pagination={{ clickable: true }}
     autoplay={{ delay: 15000 }}
-    className="w-full h-screen [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
+    className="w-full h-[80vh] md:h-screen [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
   >
     {slides.map((slide) => (
       <SwiperSlide key={slide.id}>
