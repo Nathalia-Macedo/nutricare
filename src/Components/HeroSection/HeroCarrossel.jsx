@@ -302,16 +302,27 @@ export default function HeroCarousel() {
 
   return (
     <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 15000 }}
-      className="w-full max-h-[80vh] h-auto [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
-      
-    >
-      {slides.map((slide) => (
-        <SwiperSlide key={slide.id}>{isMobile ? renderMobileSlide(slide) : renderDesktopSlide(slide)}</SwiperSlide>
-      ))}
-    </Swiper>
+    modules={[Navigation, Pagination, Autoplay]}
+    pagination={{ clickable: true }}
+    autoplay={{ delay: 15000 }}
+    className="w-full h-screen [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
+  >
+    {slides.map((slide) => (
+      <SwiperSlide key={slide.id}>
+        {isMobile ? (
+          renderMobileSlide(slide)
+        ) : (
+          <div className="relative w-full h-full overflow-hidden">
+            <img
+              src={slide.desktopImage || "/placeholder.svg"}
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+      </SwiperSlide>
+    ))}
+  </Swiper>
   )
 }
 
