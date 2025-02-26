@@ -121,40 +121,42 @@ export default function HeroCarousel() {
   const renderMobileSlide = (slide) => {
     if (slide.id === 1) {
       return (
-        <div  className="h-auto min-h-screen relative w-full">
+        <div  className="relative w-full h-screen">
           {/* Background Image */}
           <img
             src={slide.mobileImage || "/placeholder.svg"}
             alt=""
-            className="absolute inset-0 w-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           />
-
+  
           {/* Content Overlay */}
-          <div style={{minHeight:"80dvh"}} className="relative z-10 w-full flex flex-col p-6">
-            <div className="space-y-4">
+          <div className="relative z-10 w-full h-full flex flex-col p-6">
+            <div className="mt-4 space-y-6">
               <h2 className="text-[#31A431] text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
-              <p className="text-gray-700 text-sm font-bold">{slide.mobileContent.description}</p>
+              <p className="text-gray-700 text-sm font-bold leading-relaxed">{slide.mobileContent.description}</p>
             </div>
-
+  
             {/* Features List */}
-            <div className="flex-1 flex flex-col justify-center">
-              <div className="space-y-2">
+            <div className="flex-1 flex flex-col justify-center my-8">
+              <div className="space-y-6">
                 {slide.mobileContent.features.map((feature, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    {feature.icon}
-                    <p className="text-gray-700 text-sm">{feature.text}</p>
+                  <div key={index} className="flex items-start space-x-4">
+                    <div className="mt-1">{feature.icon}</div>
+                    <p className="text-gray-700 text-sm leading-relaxed">{feature.text}</p>
                   </div>
                 ))}
               </div>
             </div>
-
+  
             {/* Button */}
-            <button
-              onClick={handleWhatsAppClick}
-              className="w-full bg-[#31A431] text-white py-3 rounded-md font-medium hover:bg-[#2b932b] transition-colors"
-            >
-              Agende sua consulta
-            </button>
+            <div className="pb-6">
+              <button
+                onClick={handleWhatsAppClick}
+                className="w-full bg-[#31A431] text-white py-3 rounded-md font-medium hover:bg-[#2b932b] transition-colors"
+              >
+                Agende sua consulta
+              </button>
+            </div>
           </div>
         </div>
       )
@@ -162,36 +164,69 @@ export default function HeroCarousel() {
 
     if (slide.id === 2) {
       return (
+        // <div  
+        //   className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-between"
+        //   onClick={() => (window.location.href = "/profissionais")}
+        // >
+        //   <div style={{minHeight:"80dvh"}}  className="space-y-4">
+        //     <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
+        //     <p className="text-white text-sm">{slide.mobileContent.description}</p>
+        //     <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
+        //   </div>
+
+        //   <div style={{marginTop:'-100px'}}>
+        //     <button
+        //       onClick={(e) => {
+        //         e.stopPropagation()
+        //         window.open("https://wa.me/5571988503333", "_blank")
+        //       }}
+        //       className="w-4/5 mx-auto block border-2 border-white text-white py-2 rounded-md font-medium hover:bg-white hover:text-[#31A431] transition-colors"
+        //     >
+        //       Agende sua consulta
+        //     </button>
+
+        //     <div className="w-40 h-40 mx-auto overflow-hidden rounded-2xl">
+        //       <img
+        //         src={slide.mobileContent.image || "/placeholder.svg"}
+        //         alt="Dra. Renata Sanches"
+        //         className="w-full h-full object-cover"
+        //       />
+        //     </div>
+        //   </div>
+        // </div>
         <div  
-          className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-between"
-          onClick={() => (window.location.href = "/profissionais")}
-        >
-          <div style={{minHeight:"80dvh"}}  className="space-y-4">
-            <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
-            <p className="text-white text-sm">{slide.mobileContent.description}</p>
-            <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
-          </div>
+  className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-between"
+  onClick={() => (window.location.href = "/profissionais")}
+>
+  {/* Conteúdo superior cresce para empurrar o conteúdo inferior */}
+  <div className="flex-1 space-y-4">
+    <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
+    <p className="text-white text-sm">{slide.mobileContent.description}</p>
+    <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
+  </div>
 
-          <div className="space-y-8">
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                window.open("https://wa.me/5571988503333", "_blank")
-              }}
-              className="w-4/5 mx-auto block border-2 border-white text-white py-2 rounded-md font-medium hover:bg-white hover:text-[#31A431] transition-colors"
-            >
-              Agende sua consulta
-            </button>
+  {/* Conteúdo inferior fixo */}
+  <div className="flex flex-col items-center space-y-4">
+    <button
+      onClick={(e) => {
+        e.stopPropagation()
+        window.open("https://wa.me/5571988503333", "_blank")
+      }}
+      className="w-4/5 mx-auto block border-2 border-white text-white py-2 rounded-md font-medium hover:bg-white hover:text-[#31A431] transition-colors"
+    >
+      Agende sua consulta
+    </button>
 
-            <div className="w-40 h-40 mx-auto overflow-hidden rounded-2xl">
-              <img
-                src={slide.mobileContent.image || "/placeholder.svg"}
-                alt="Dra. Renata Sanches"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
+    <div className="w-40 h-40 mx-auto overflow-hidden rounded-2xl">
+      <img
+        src={slide.mobileContent.image || "/placeholder.svg"}
+        alt="Dra. Renata Sanches"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</div>
+
       )
     }
 
@@ -201,7 +236,7 @@ export default function HeroCarousel() {
           className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-around"
           onClick={() => (window.location.href = "/blog/3")}
         >
-          <div className="space-y-4">
+          <div className="space-y-2">
             <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
             <p className="text-white text-sm">{slide.mobileContent.description}</p>
             <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
@@ -305,8 +340,8 @@ export default function HeroCarousel() {
     modules={[Navigation, Pagination, Autoplay]}
     pagination={{ clickable: true }}
     autoplay={{ delay: 15000 }}
-    className="w-full h-[80vh] md:h-screen [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-green-500"
-  >
+    className="w-full h-screen"
+    >
     {slides.map((slide) => (
       <SwiperSlide key={slide.id}>
         {isMobile ? (
