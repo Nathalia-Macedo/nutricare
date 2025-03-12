@@ -10,6 +10,7 @@ import desktop2 from "../../Assets/desktop2.png"
 import slide4 from "../../Assets/slide4BG.png"
 import { Utensils, Users, ClipboardList, Calendar } from "lucide-react"
 import renataMobile from '../../Assets/renataMobile.png'
+import conheca from '../../Assets/conheca.png'
 const slides = [
   {
     id: 1,
@@ -50,8 +51,7 @@ const slides = [
   },
   {
     id: 2,
-    desktopImage:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20179-KYso8EiLDRqzfN66Tac9F7rZ5KOgNM.png",
+    desktopImage:conheca,
     mobileContent: {
       title: "Conheça Renata Sanches e Nossa Equipe de Nutricionistas Especializadas",
       description:
