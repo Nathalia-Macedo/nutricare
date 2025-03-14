@@ -241,55 +241,65 @@ export default function HeroCarousel() {
 
     if (slide.id === 4) {
       return (
-        <div className="relative w-full h-full bg-white p-6 flex flex-col">
-          <div className="flex-1 relative z-20">
-            <h2 className="text-4xl font-bold leading-tight mb-10">
+        <div className="relative w-full h-full bg-white">
+          <div className="p-6 pb-0 flex flex-col h-[calc(100%-150px)]">
+            <h2 className="text-4xl font-bold leading-tight mb-8">
               Especialidades que Cuidam de Você em Cada Fase da Vida
             </h2>
 
-            <div className="space-y-8">
+            <div className="space-y-8 flex-grow">
               <div className="flex items-start gap-4">
-                <span className="text-[#31A431] font-mono text-3xl">01</span>
-                <p className="text-base">
-                  Nutrição Clínica: Controle de doenças como diabetes, obesidade e hipertensão.
-                </p>
+                <span className="text-[#31A431] font-mono text-4xl">01</span>
+                <div>
+                  <p className="text-xl font-medium">Nutrição Clínica</p>
+                  <p className="text-base">Controle de doenças como diabetes, obesidade e hipertensão.</p>
+                </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="text-[#31A431] font-mono text-3xl">02</span>
-                <p className="text-base">Nutrição Esportiva: Dietas para alta performance e recuperação muscular</p>
+                <span className="text-[#31A431] font-mono text-4xl">02</span>
+                <div>
+                  <p className="text-xl font-medium">Nutrição Esportiva</p>
+                  <p className="text-base">Dietas para alta performance e recuperação muscular</p>
+                </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="text-[#31A431] font-mono text-3xl">03</span>
-                <p className="text-base">Reeducação Alimentar: Hábitos saudáveis para o dia a dia</p>
+                <span className="text-[#31A431] font-mono text-4xl">03</span>
+                <div>
+                  <p className="text-xl font-medium">Reeducação Alimentar</p>
+                  <p className="text-base">Hábitos saudáveis para o dia a dia</p>
+                </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="text-[#31A431] font-mono text-3xl">04</span>
-                <p className="text-base">Nutrição Infantil: Crescimento saudável desde cedo</p>
+                <span className="text-[#31A431] font-mono text-4xl">04</span>
+                <div>
+                  <p className="text-xl font-medium">Nutrição Infantil</p>
+                  <p className="text-base">Crescimento saudável desde cedo</p>
+                </div>
               </div>
             </div>
 
             <button
               onClick={() => window.open("https://wa.me/5571988503333", "_blank")}
-              className="w-full bg-[#31A431] text-white py-3 rounded-md font-medium hover:bg-[#2b932b] transition-colors mt-12"
+              className="w-full bg-[#31A431] text-white py-4 rounded-md font-medium hover:bg-[#2b932b] transition-colors mt-8 text-lg"
             >
               Agende sua consulta
             </button>
           </div>
 
           {/* Decorative Image */}
-          <div className="absolute bottom-0 left-0 right-0 w-full z-10">
+          <div className="h-[150px] w-full overflow-hidden">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/top-view-healthy-diet-salad-with-grilled-chicken-broccoli-cauliflower-tomato-lettuce-avocado-lettuce-removebg-preview%202-eyJwtuLgTBTQSvOmMGSI09slI5aWKn.png"
               alt=""
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
         </div>
       )
-    }  if (slide.id === 5) {
+    } if (slide.id === 5) {
       return (
         <div className="relative w-full h-full bg-white p-6 flex flex-col">
           <div className="space-y-4 mb-4">
