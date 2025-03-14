@@ -174,69 +174,36 @@ export default function HeroCarousel() {
 
     if (slide.id === 2) {
       return (
-        // <div  
-        //   className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-between"
-        //   onClick={() => (window.location.href = "/profissionais")}
-        // >
-        //   <div style={{minHeight:"80dvh"}}  className="space-y-4">
-        //     <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
-        //     <p className="text-white text-sm">{slide.mobileContent.description}</p>
-        //     <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
-        //   </div>
+        <div
+          className="relative w-full h-full bg-[#31A431] p-6"
+          onClick={() => (window.location.href = "/profissionais")}
+        >
+          <div className="space-y-4">
+            <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
+            <p className="text-white text-base leading-relaxed">{slide.mobileContent.description}</p>
+            <p className="text-white text-base font-medium">{slide.mobileContent.callToAction}</p>
+          </div>
 
-        //   <div style={{marginTop:'-100px'}}>
-        //     <button
-        //       onClick={(e) => {
-        //         e.stopPropagation()
-        //         window.open("https://wa.me/5571988503333", "_blank")
-        //       }}
-        //       className="w-4/5 mx-auto block border-2 border-white text-white py-2 rounded-md font-medium hover:bg-white hover:text-[#31A431] transition-colors"
-        //     >
-        //       Agende sua consulta
-        //     </button>
+          <div className="absolute bottom-6 left-0 right-0 flex flex-col items-center gap-4 px-6">
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                window.open("https://wa.me/5571988503333", "_blank")
+              }}
+              className="w-full border-2 border-white text-white py-3 rounded-md font-medium hover:bg-white hover:text-[#31A431] transition-colors"
+            >
+              Agende sua consulta
+            </button>
 
-        //     <div className="w-40 h-40 mx-auto overflow-hidden rounded-2xl">
-        //       <img
-        //         src={slide.mobileContent.image || "/placeholder.svg"}
-        //         alt="Dra. Renata Sanches"
-        //         className="w-full h-full object-cover"
-        //       />
-        //     </div>
-        //   </div>
-        // </div>
-        <div  
-  className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-between"
-  onClick={() => (window.location.href = "/profissionais")}
->
-  {/* Conteúdo superior cresce para empurrar o conteúdo inferior */}
-  <div className="flex-1 space-y-4">
-    <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
-    <p className="text-white text-sm">{slide.mobileContent.description}</p>
-    <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
-  </div>
-
-  {/* Conteúdo inferior fixo */}
-  <div className="flex flex-col items-center space-y-4">
-    <button
-      onClick={(e) => {
-        e.stopPropagation()
-        window.open("https://wa.me/5571988503333", "_blank")
-      }}
-      className="w-4/5 mx-auto block border-2 border-white text-white py-2 rounded-md font-medium hover:bg-white hover:text-[#31A431] transition-colors"
-    >
-      Agende sua consulta
-    </button>
-
-    <div className="w-40 h-40 mx-auto overflow-hidden rounded-2xl">
-      <img
-        src={slide.mobileContent.image || "/placeholder.svg"}
-        alt="Dra. Renata Sanches"
-        className="w-full h-full object-cover"
-      />
-    </div>
-  </div>
-</div>
-
+            <div className="w-32 h-32 overflow-hidden rounded-2xl">
+              <img
+                src={slide.mobileContent.image || "/placeholder.svg"}
+                alt="Dra. Renata Sanches"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
       )
     }
 
