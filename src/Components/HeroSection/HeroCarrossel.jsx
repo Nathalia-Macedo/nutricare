@@ -241,40 +241,41 @@ export default function HeroCarousel() {
 
     if (slide.id === 4) {
       return (
-        <div  style={{minHeight:"80dvh"}}  className="relative w-full h-full bg-white p-6 flex flex-col">
+        <div className="relative w-full h-full bg-white p-6 flex flex-col">
           <div className="flex-1 relative z-20">
-            <h2 className="text-3xl font-bold leading-tight mb-8">
+            <h2 className="text-4xl font-bold leading-tight mb-10">
               Especialidades que Cuidam de Você em Cada Fase da Vida
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="flex items-start gap-4">
-                <span className="text-[#31A431] font-mono text-2xl">01</span>
-                <p className="text-xs">Nutrição Clínica: Controle de doenças como diabetes, obesidade e hipertensão.</p>
+                <span className="text-[#31A431] font-mono text-3xl">01</span>
+                <p className="text-base">
+                  Nutrição Clínica: Controle de doenças como diabetes, obesidade e hipertensão.
+                </p>
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="text-[#31A431] font-mono text-2xl">02</span>
-                <p className="text-xs">Nutrição Esportiva: Dietas para alta performance e recuperação muscular</p>
+                <span className="text-[#31A431] font-mono text-3xl">02</span>
+                <p className="text-base">Nutrição Esportiva: Dietas para alta performance e recuperação muscular</p>
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="text-[#31A431] font-mono text-2xl">03</span>
-                <p className="text-xs">Reeducação Alimentar: Hábitos saudáveis para o dia a dia</p>
+                <span className="text-[#31A431] font-mono text-3xl">03</span>
+                <p className="text-base">Reeducação Alimentar: Hábitos saudáveis para o dia a dia</p>
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="text-[#31A431] font-mono text-2xl">04</span>
-                <p className="text-xs">Nutrição Infantil: Crescimento saudável desde cedo</p>
+                <span className="text-[#31A431] font-mono text-3xl">04</span>
+                <p className="text-base">Nutrição Infantil: Crescimento saudável desde cedo</p>
               </div>
             </div>
 
             <button
               onClick={() => window.open("https://wa.me/5571988503333", "_blank")}
-              className="w-full bg-[#31A431] text-white py-3 rounded-md font-medium hover:bg-[#2b932b] transition-colors mt-8"
+              className="w-full bg-[#31A431] text-white py-3 rounded-md font-medium hover:bg-[#2b932b] transition-colors mt-12"
             >
-            Agende sua consulta
-
+              Agende sua consulta
             </button>
           </div>
 
