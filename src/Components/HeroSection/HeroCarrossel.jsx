@@ -11,6 +11,7 @@ import slide4 from "../../Assets/slide4BG.png"
 import { Utensils, Users, ClipboardList, Calendar } from "lucide-react"
 import renataMobile from '../../Assets/renataMobile.png'
 import conheca from '../../Assets/conheca.png'
+import slideBio from '../../Assets/slideBio.png'
 const slides = [
   {
     id: 1,
@@ -60,8 +61,7 @@ const slides = [
       callToAction: "Clique aqui e conheça nossa equipe!",
     },
     targetSection: "profissionais",
-  },
-  {
+  },{
     id: 3,
     desktopImage:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20174-Zq5Kg6laYMY4SAqGvRpR4gafN0EXoP.png",
@@ -74,14 +74,24 @@ const slides = [
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20197-l4YtMdjwlHKptUILvhfp7GrVxG6UME.png",
     },
     targetSection: "blog/3",
-  },
-  {
+  },{
     id: 4,
     desktopImage: slide4,
     mobileTitle: "Nossas Especialidades",
     mobileDescription: "Conheça todos os nossos serviços especializados",
     buttonText: "Ver Especialidades",
     targetSection: "specialties",
+  }, ,{
+    id: 5,
+    desktopImage: slideBio,
+    mobileContent: {
+      title: "Conheça seu corpo em detalhes com exame de bioimpedância InBody270",
+      description:
+        "Descubra sua composição corporal de forma precisa e rápida. Em apenas 15 segundos, você terá uma análise completa que vai transformar sua jornada de saúde",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PMngHVpBtbQpSlkKuIleaURCYuJKJn.png",
+      buttonText: "Agendar Exame",
+    },
+    targetSection: "bioimpedancia",
   },
 ]
 
@@ -312,7 +322,37 @@ export default function HeroCarousel() {
           </div>
         </div>
       )
+    }  if (slide.id === 5) {
+      return (
+        <div className="relative w-full h-full bg-white p-6 flex flex-col">
+          <div className="space-y-4 mb-4">
+            <h2 className="text-black text-2xl font-bold leading-tight">{slide.mobileContent.title}</h2>
+            <p className="text-gray-700 text-sm">{slide.mobileContent.description}</p>
+          </div>
+
+          <div className="flex-grow flex items-center justify-center" style={{ maxHeight: "50%" }}>
+            <img
+              src={slide.mobileContent.image || "/placeholder.svg"}
+              alt="InBody270 bioimpedância"
+              className="max-h-[200px] object-contain"
+            />
+          </div>
+
+          <div className="mt-auto pt-4">
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                window.location.href = "/bioimpedancia"
+              }}
+              className="w-full bg-[#31A431] text-white py-3 rounded-md font-medium hover:bg-[#2b932b] transition-colors"
+            >
+              {slide.mobileContent.buttonText}
+            </button>
+          </div>
+        </div>
+      )
     }
+
 
     // Renderização padrão para outros slides mobile
     return (
@@ -360,4 +400,3 @@ export default function HeroCarousel() {
   </Swiper>
   )
 }
-
