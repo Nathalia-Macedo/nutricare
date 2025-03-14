@@ -178,13 +178,13 @@ export default function HeroCarousel() {
           className="relative w-full h-full bg-[#31A431] p-6"
           onClick={() => (window.location.href = "/profissionais")}
         >
-          <div className="space-y-4">
-            <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
-            <p className="text-white text-base leading-relaxed">{slide.mobileContent.description}</p>
-            <p className="text-white text-base font-medium">{slide.mobileContent.callToAction}</p>
+          <div className="space-y-6">
+            <h2 className="text-white text-4xl font-bold leading-tight">{slide.mobileContent.title}</h2>
+            <p className="text-white text-lg leading-relaxed">{slide.mobileContent.description}</p>
+            <p className="text-white text-lg font-medium">{slide.mobileContent.callToAction}</p>
           </div>
 
-          <div className="absolute bottom-6 left-0 right-0 flex flex-col items-center gap-4 px-6">
+          <div className="absolute bottom-6 left-0 right-0 flex flex-col items-center gap-6 px-6">
             <button
               onClick={(e) => {
                 e.stopPropagation()
@@ -195,7 +195,7 @@ export default function HeroCarousel() {
               Agende sua consulta
             </button>
 
-            <div className="w-32 h-32 overflow-hidden rounded-2xl">
+            <div className="w-40 h-40 overflow-hidden rounded-2xl">
               <img
                 src={slide.mobileContent.image || "/placeholder.svg"}
                 alt="Dra. Renata Sanches"
