@@ -209,26 +209,25 @@ export default function HeroCarousel() {
 
     if (slide.id === 3) {
       return (
-        <div  style={{minHeight:"80dvh"}} 
-          className="relative w-full h-full bg-[#31A431] p-6 flex flex-col justify-around"
+        <div
+          className="relative w-full h-full bg-[#31A431] p-6 flex flex-col"
           onClick={() => (window.location.href = "/blog/3")}
         >
-          <div className="space-y-2">
-            <h2 className="text-white text-3xl font-bold leading-tight">{slide.mobileContent.title}</h2>
-            <p className="text-white text-sm">{slide.mobileContent.description}</p>
-            <p className="text-white text-sm font-medium">{slide.mobileContent.callToAction}</p>
+          <div className="space-y-6 mb-auto">
+            <h2 className="text-white text-4xl font-bold leading-tight">{slide.mobileContent.title}</h2>
+            <p className="text-white text-lg leading-relaxed">{slide.mobileContent.description}</p>
+            <p className="text-white text-lg font-medium">{slide.mobileContent.callToAction}</p>
           </div>
 
-          <div className="relative z-20">
+          <div className="mt-auto mb-12 relative z-20">
             <button
               onClick={(e) => {
                 e.stopPropagation()
                 window.open("https://wa.me/5571988503333", "_blank")
               }}
-              className="w-4/5 mx-auto block border-2 border-white text-white py-2 rounded-md font-medium hover:bg-white hover:text-[#31A431] transition-colors"
+              className="w-full mx-auto block border-2 border-white text-white py-3 rounded-md font-medium hover:bg-white hover:text-[#31A431] transition-colors"
             >
-            Agende sua consulta
-
+              Agende sua consulta
             </button>
           </div>
 
