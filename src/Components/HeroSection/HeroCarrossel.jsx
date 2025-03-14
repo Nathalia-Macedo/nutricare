@@ -252,7 +252,7 @@ export default function HeroCarousel() {
                 <span className="text-[#31A431] font-mono text-4xl">01</span>
                 <div>
                   <p className="text-xl font-medium">Nutrição Clínica</p>
-                  <p className="text-base">Controle de doenças como diabetes, obesidade e hipertensão.</p>
+                  <p className="text-sm">Controle de doenças como diabetes, obesidade e hipertensão.</p>
                 </div>
               </div>
 
@@ -260,7 +260,7 @@ export default function HeroCarousel() {
                 <span className="text-[#31A431] font-mono text-4xl">02</span>
                 <div>
                   <p className="text-xl font-medium">Nutrição Esportiva</p>
-                  <p className="text-base">Dietas para alta performance e recuperação muscular</p>
+                  <p className="text-sm">Dietas para alta performance e recuperação muscular</p>
                 </div>
               </div>
 
@@ -268,7 +268,7 @@ export default function HeroCarousel() {
                 <span className="text-[#31A431] font-mono text-4xl">03</span>
                 <div>
                   <p className="text-xl font-medium">Reeducação Alimentar</p>
-                  <p className="text-base">Hábitos saudáveis para o dia a dia</p>
+                  <p className="text-sm">Hábitos saudáveis para o dia a dia</p>
                 </div>
               </div>
 
@@ -276,7 +276,7 @@ export default function HeroCarousel() {
                 <span className="text-[#31A431] font-mono text-4xl">04</span>
                 <div>
                   <p className="text-xl font-medium">Nutrição Infantil</p>
-                  <p className="text-base">Crescimento saudável desde cedo</p>
+                  <p className="text-sm">Crescimento saudável desde cedo</p>
                 </div>
               </div>
             </div>
