@@ -79,7 +79,7 @@ const slides = [
     mobileDescription: "Conheça todos os nossos serviços especializados",
     buttonText: "Ver Especialidades",
     targetSection: "specialties",
-  }, ,{
+  },{
     id: 5,
     desktopImage: slideBio,
     mobileContent: {
